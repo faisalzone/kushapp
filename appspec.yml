@@ -23,10 +23,8 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  # - source: ./
-  - source: /
-    # destination: /home/bitnami/apps/myApp
-    destination: /opt/bitnami/apps/django/django_projects/Project
+  - source: ./
+    destination: /opt/bitnami/apps/django/django_projects/Project/
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions"
 #   section here that describes special permissions to apply to the files
@@ -79,19 +77,16 @@ hooks:
 # During the ApplicationStop deployment lifecycle event, run the commands
 #   in the script specified in "location" starting from the root of the
 #   revision's file bundle.
-  ApplicationStop:
-    - location: scripts/stop_application.sh
-      timeout: 600
-      runas: root
+#  ApplicationStop:
+#    - location:
+#      timeout:
+#      runas:
 #    - location:
 #      timeout:
 #      runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  BeforeInstall:
-    - location: scripts/clean_instance.sh
-      timeout: 600
-      runas: root
+#  BeforeInstall:
 #    - location:
 #      timeout:
 #      runas:
@@ -101,30 +96,15 @@ hooks:
 # During the AfterInstall deployment lifecycle event,run the commands
 #   in the script specified in "location".
   AfterInstall:
-    # - location: scripts/install_os_dependencies.sh
-    #   timeout: 6000
-    #   runas: root
-    - location: scripts/restart_server.sh
-      timeout: 600
-      runas: root
-    - location: scripts/install_python_dependencies.sh
-      timeout: 600
-      runas: root
-    - location: scripts/migrate.sh
-      timeout: 600
+    - location: scripts/applicationstart.sh
+      # timeout: 600
 #      runas:
 #    - location:
 #      timeout:
-      runas: root
+      # runas: root
 # During the ApplicationInstall deployment lifecycle event,run the commands
 #   in the script specified in "location".
-  ApplicationStart:
-    - location: scripts/collectstatic.sh
-      timeout: 600
-      runas: root
-    - location: scripts/restart_server.sh
-      timeout: 600
-      runas: root
+#  ApplicationStart:
 #    - location:
 #      timeout:
 #      runas:

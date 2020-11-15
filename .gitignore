@@ -1,0 +1,9 @@
+**.idea
+*.sqlite3
+*pyc
+.env
+media
+.DS_Store
+docker-compose.yml
+venv
+.vscode

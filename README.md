@@ -2,6 +2,7 @@
 
 When creating the EC2 instance, enter the following in "Step 3: Configure Instance Details" in the 'User data' field 'As text'-
 
+```
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install ruby
@@ -18,5 +19,6 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 sudo pip install pytz
 sudo pip install --upgrade Django --install-option="--prefix=/opt/bitnami/apps/django"
 sudo /opt/bitnami/ctlscript.sh restart apache
+```
 
 (reference: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html)

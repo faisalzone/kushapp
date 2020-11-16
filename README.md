@@ -1,7 +1,5 @@
 # Github CI/CD to AWS EC2 Bitnami
 
-Lizzy is a good mau 🦁
-
 When creating the EC2 instance, enter the following in "Step 3: Configure Instance Details" in the 'User data' field 'As text'-
 
 ```

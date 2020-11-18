@@ -15,7 +15,7 @@ Root device type: ebs | Virtualization type: hvm | ENA Enabled: Yes
 
 ## Preare EC2 instance for CodeDeploy
 
-Log into AWS EC2 instance and run the following commands-
+Access the AWS EC2 instance via SSH and run the following commands-
 
 ```
 #!/bin/bash

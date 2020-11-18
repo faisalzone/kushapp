@@ -261,6 +261,8 @@ The pipeline is now created and can be viewed by going to 'Pipelines' on the lef
 
 ### Github
 
+It's important that AWS Connector for GitHub exist at the right places in GitHub.
+
 Go to Settings-
 - Click "Applications" on the left side nav
   - Installed GitHub Apps (tab)

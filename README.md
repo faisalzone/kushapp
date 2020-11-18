@@ -46,7 +46,6 @@ To check if CodeDeploy is running-
 
 ```
 service codedeploy-agent status
-
 ```
 
 ## Create IAM roles and policies
@@ -173,7 +172,9 @@ Perform the following-
 
 ## CodeDeploy
 
-First create an application-
+### Create an application
+
+To create an application-
 - Click Applications on the left-side nav
 - Click 'Create application' button
 - Enter the following to create application
@@ -182,7 +183,10 @@ First create an application-
     - Compute platform: EC2/On-premises
 - Click 'Create application' button
 
-Create a deployment group for the application-
+### Create a deployment group
+
+To create a deployment group for the newly application-
+
 - Click 'Deployment groups' tab
 - Click 'Create deployment group' button
 - Enter the following-
@@ -270,4 +274,4 @@ The 'AWS CodePipeline (Sydney)' in 'Authorized OAuth Apps' is not required as it
 
 ## Further Reading
 
-- [AWS CodeDeploy: Manage Deployment Complexity](https://www.youtube.com/watch?v=KzziRHOa5X4&ab_channel=AmazonWebServices) by [Ken Exner, Director, AWS Developer Tools](https://www.linkedin.com/in/ken-exner-b914542/)
+[AWS CodeDeploy: Manage Deployment Complexity](https://www.youtube.com/watch?v=KzziRHOa5X4&ab_channel=AmazonWebServices) by [Ken Exner, Director, AWS Developer Tools](https://www.linkedin.com/in/ken-exner-b914542/)

@@ -15,8 +15,6 @@ Root device type: ebs | Virtualization type: hvm | ENA Enabled: Yes
 
 ## Preare EC2 instance for CodeDeploy
 
-~~When creating the EC2 instance, enter the following in "Step 3: Configure Instance Details" in the 'User data' field 'As text'-~~
-
 Log into AWS EC2 instance and run the following commands-
 
 ```
@@ -78,7 +76,6 @@ EC2CodeDeploy is an Inline policy-
         }
     ]
 }
-
 ```
 
 Trust relationship policy-
@@ -90,20 +87,21 @@ Trust relationship policy-
       "Effect": "Allow",
       "Principal": {
         "Service": [
-          "ec2.amazonaws.com",
+          "codedeploy.ap-southeast-2.amazonaws.com",
           "codedeploy.amazonaws.com",
-          "codedeploy.ap-southeast-2.amazonaws.com"
+          "ec2.amazonaws.com"
         ]
       },
       "Action": "sts:AssumeRole"
     }
   ]
 }
-
 ```
 
-1 tag where Tag key is 'Name' and Tag value is EC2CodeDeploy
-
+Tags (1)
+- Tag 1
+  - Tag key: Name
+  - Tag value: EC2CodeDeploy
 
 ### CodeDeployRole (Role 2 of 2)
 
@@ -133,7 +131,6 @@ CodeDeploy is a Managed policy-
         }
     ]
 }
-
 ```
 
 Trust relationship policy-
@@ -155,10 +152,12 @@ Trust relationship policy-
     }
   ]
 }
-
 ```
 
-1 tag where Tag key is 'Name' and Tag value is CodeDeployRole
+Tags (1)
+- Tag 1
+  - Tag key: Name
+  - Tag value: CodeDeployRole
 
 ## Attach IAM role to EC2 instance
 

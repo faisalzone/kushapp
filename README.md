@@ -40,7 +40,7 @@ sudo pip install --upgrade Django --install-option="--prefix=/opt/bitnami/apps/d
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
 
-(reference: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html)
+(Reference: [Install the CodeDeploy agent for Ubuntu Server - AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html))
 
 To check if CodeDeploy is running-
 

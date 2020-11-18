@@ -1,4 +1,4 @@
-# Github CI/CD pipeline to AWS EC2 Bitnami
+# Github CI/CD pipeline to AWS EC2 instance
 
 ## Setup Django application
 

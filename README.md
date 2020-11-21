@@ -51,13 +51,28 @@ service codedeploy-agent status
 ## Create IAM roles and policies
 
 
+
 ### EC2CodeDeploy (Role 1 of 2)
 
-Attach the following policies to the role
-- AmazonEC2RoleforAWSCodeDeploy
-- AmazonS3FullAccess
-- AWSCodeDeployRole
-- EC2CodeDeploy
+EC2CodeDeploy role is for AWS EC2.
+- Go to IAM > Roles
+- Ensure the "AWS service" is selected under heading 'Select type of trusted entity'
+- Select "EC2" under heading 'Choose a use case'
+- Click "Next: Permissions" button
+- Attach the following policies to the role-
+  - AmazonEC2RoleforAWSCodeDeploy
+  - AmazonS3FullAccess
+  - AWSCodeDeployRole
+  - EC2CodeDeploy _(Add later)_
+- Click "Next: Tags" button
+- Add a tag
+  - Tag 1
+    - Name
+    - EC2CodeDeploy
+- Click "Next: Review" button
+- Type "EC2CodeDeploy" as 'Role name'
+- In 'Role description', type 'Allows EC2 instances to call AWS services on your behalf.'
+- Click "Create role" button
 
 EC2CodeDeploy is an Inline policy-
 
@@ -104,9 +119,24 @@ Tags (1)
 
 ### CodeDeployRole (Role 2 of 2)
 
-Attach the following policies to the role
-- AWSCodeDeployRole
-- CodeDeploy
+CodeDeployRole is for AWS CodeDeploy pipeline.
+- Go to IAM > Roles
+- Ensure the "AWS service" is selected under heading 'Select type of trusted entity'
+- Select "CodeDeploy" under heading 'Or select a service to view its use cases'
+- Select "CodeDeploy" under heading 'Select your use case'
+- Click "Next: Permissions" button
+- Attach the following policies to the role-
+  - AWSCodeDeployRole
+  - CodeDeploy _(Add later)_
+- Click "Next: Tags" button
+- Add a tag
+  - Tag 1
+    - Name
+    - CodeDeployRole
+- Click "Next: Review" button
+- Type "CodeDeployRole" as 'Role name'
+- In 'Role description', type 'Allows CodeDeploy to call AWS services such as Auto Scaling on your behalf.'
+- Click "Create role" button
 
 CodeDeploy is a Managed policy-
 
@@ -152,11 +182,6 @@ Trust relationship policy-
   ]
 }
 ```
-
-Tags (1)
-- Tag 1
-  - Tag key: Name
-  - Tag value: CodeDeployRole
 
 ## Attach IAM role to EC2 instance
 

@@ -301,4 +301,5 @@ The 'AWS CodePipeline (Sydney)' in 'Authorized OAuth Apps' is not required as it
 
 ## Further Reading
 
-[AWS CodeDeploy: Manage Deployment Complexity](https://www.youtube.com/watch?v=KzziRHOa5X4&ab_channel=AmazonWebServices) by [Ken Exner, Director, AWS Developer Tools](https://www.linkedin.com/in/ken-exner-b914542/)
+- [AWS CodeDeploy: Manage Deployment Complexity](https://www.youtube.com/watch?v=KzziRHOa5X4&ab_channel=AmazonWebServices) by [Ken Exner, Director, AWS Developer Tools](https://www.linkedin.com/in/ken-exner-b914542/)
+- [AWS re:Invent 2015 | (DVO306) AWS CodeDeploy: Automating Your Software Deployments](https://www.youtube.com/watch?v=A4NSyUbAEkw) by [Andy Troutman, Director, Amazon Web Services](https://www.linkedin.com/in/andytroutman/)

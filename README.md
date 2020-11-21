@@ -50,8 +50,6 @@ service codedeploy-agent status
 
 ## Create IAM roles and policies
 
-
-
 ### EC2CodeDeploy (Role 1 of 2)
 
 EC2CodeDeploy role is for AWS EC2.
@@ -111,11 +109,6 @@ Trust relationship policy-
   ]
 }
 ```
-
-Tags (1)
-- Tag 1
-  - Tag key: Name
-  - Tag value: EC2CodeDeploy
 
 ### CodeDeployRole (Role 2 of 2)
 

@@ -1,5 +1,9 @@
 # Github CI/CD pipeline to AWS EC2 instance
 
+
+![alt text](https://github.com/faisalzone/kushapp/blob/master/deployment_method.png?raw=true)
+
+
 ## Setup Django application
 
 - Django Application should be on an EC2 instance where AMI is a Django Stack powered by Bitnami (HVM). When launching an instance, choose the following from Community AMIs-

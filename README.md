@@ -16,6 +16,7 @@ Root device type: ebs | Virtualization type: hvm | ENA Enabled: Yes
 ```
 - Create an [appspec.yml](appspec.yml) file where manage.py file exists.
 - Create a [scripts](scripts) folder within the main app folder. This folder will have all the shell scripts supporting the [appspec.yml](appspec.yml) file.
+- SSH connection in security group of the EC2 instance needs to have the source `0.0.0.0/0`.
 
 ## Preare EC2 instance for CodeDeploy
 

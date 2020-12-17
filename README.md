@@ -59,6 +59,7 @@ service codedeploy-agent status
 
 EC2CodeDeploy role is for AWS EC2.
 - Go to IAM > Roles
+- Click "Create role" button
 - Ensure the "AWS service" is selected under heading 'Select type of trusted entity'
 - Select "EC2" under heading 'Choose a use case'
 - Click "Next: Permissions" button
@@ -119,6 +120,7 @@ Trust relationship policy-
 
 CodeDeployRole is for AWS CodeDeploy pipeline.
 - Go to IAM > Roles
+- Click "Create role" button
 - Ensure the "AWS service" is selected under heading 'Select type of trusted entity'
 - Select "CodeDeploy" under heading 'Or select a service to view its use cases'
 - Select "CodeDeploy" under heading 'Select your use case'

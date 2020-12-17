@@ -70,8 +70,8 @@ EC2CodeDeploy role is for AWS EC2.
 - Click "Next: Tags" button
 - Add a tag
   - Tag 1
-    - Name
-    - EC2CodeDeploy
+    - Key: Name
+    - Value - optional: EC2CodeDeploy
 - Click "Next: Review" button
 - Type "EC2CodeDeploy" as 'Role name'
 - In 'Role description', type 'Allows EC2 instances to call AWS services on your behalf.'
@@ -129,8 +129,8 @@ CodeDeployRole is for AWS CodeDeploy pipeline.
 - Click "Next: Tags" button
 - Add a tag
   - Tag 1
-    - Name
-    - CodeDeployRole
+    - Key: Name
+    - Value - optional: CodeDeployRole
 - Click "Next: Review" button
 - Type "CodeDeployRole" as 'Role name'
 - In 'Role description', type 'Allows CodeDeploy to call AWS services such as Auto Scaling on your behalf.'

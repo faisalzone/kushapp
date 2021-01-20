@@ -218,7 +218,7 @@ To create a deployment group for the newly application-
   - Deployment group name
     - Enter a deployment group name: kushapp_deploymentgroup
   - Service role
-    - Enter a service role: arn:aws:iam::600163339681/CodeDeployRole
+    - Enter a service role: arn:aws:iam::AWS-12-digit-account-ID/CodeDeployRole
   - Deployment type
     - Choose how to deploy your application: In-place
   - Environment configuration
@@ -262,7 +262,7 @@ Create a pipeline-
   - Step 2: Add source stage
     - Source
       - Source provider: Github (Version 2)
-      - Connection: AWS Connector for Github *(arn:aws:codestar-connections:ap-southeast-2:600163339681:connection/33921b42-537b-418f-bd8f-6cd54481f3f6)*
+      - Connection: AWS Connector for Github *(arn:aws:codestar-connections:ap-southeast-2:AWS-12-digit-account-ID:connection/33921b42-537b-418f-bd8f-6cd54481f3f6)*
       - Repository: faisalzone/kushapp
       - Branch: master
       - Output artifact format: CodePipeline default *(AWS CodePipeline uses the default zip format for artifacts in the pipeline. Does not include git metadata about the repository.)*
